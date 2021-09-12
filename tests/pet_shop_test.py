@@ -163,7 +163,7 @@ class TestPetShop(unittest.TestCase):
     
     def test_add_pet_to_customer(self):
         customer = self.customers[0]
-        (customer, self.new_pet)
+        add_pet_to_customer(customer, self.new_pet)
         self.assertEqual(1, get_customer_pet_count(customer))
 
     # --- OPTIONAL ---
